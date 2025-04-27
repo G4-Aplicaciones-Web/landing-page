@@ -2,7 +2,7 @@ const ParaTi = () => {
     return (
       <section id="Para-ti" className="max-w-screen-xl mx-auto font-poppins mb-20 px-6 scroll-mt-30">
         <h2 className="font-bold text-3xl md:text-5xl pb-12 md:pb-20 text-center md:text-left">
-          ¿Qué hace NutriSmart por ti?
+          ¿Qué hace Alimentate+ por ti?
         </h2>
   
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-14 md:gap-y-20 md:gap-x-32">
