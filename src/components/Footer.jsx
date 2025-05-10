@@ -5,9 +5,9 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-2">Redes Sociales</h3>
             <div className="flex gap-4">
-            <a href="#"><img src="/instagram.svg" alt="instagram" className="w-10"/></a>
-            <a href="#"><img src="/facebook.svg" alt="facebook" className="w-10" /></a>
-            <a href="#"><img src="/youtube.svg" alt="youtube" className="w-10" /></a>
+            <a href="#"><img src="instagram.svg" alt="Instagram" className="w-10"/></a>
+            <a href="#"><img src="facebook.svg" alt="Facebook" className="w-10" /></a>
+            <a href="#"><img src="youtube.svg" alt="Youtube" className="w-10" /></a>
             </div>
             <p className="mt-2">Idiomas: Español</p>
           </div>
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
   
         <div className="text-xs border-t pt-4">
-          ¿Tienes más consultas? Contáctanos en <a className="text-blue-600 underline" href="">soporte@nutrismart.app</a>
+          ¿Tienes más consultas? Contáctanos en <a className="text-blue-600 underline" href="">soporte@alimentateplus.app</a>
         </div>
       </footer>
     );
