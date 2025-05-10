@@ -9,7 +9,7 @@ const Inicio = () => {
         <div className="flex flex-col-reverse md:flex-row items-center gap-10">
           <div className="md:w-1/2 text-left font-semibold text-lg md:text-[24px] leading-relaxed">
             <p className="text-soft-gray mb-8">
-              En NutriSmart, diseñamos planes de alimentación personalizados que se adaptan a ti, no al revés. <br />
+              En Alimentate+, diseñamos planes de alimentación personalizados que se adaptan a ti, no al revés. <br />
               Con tecnología inteligente y un enfoque humano, <br />
               te ayudamos a transformar tus hábitos, sin complicaciones.
             </p>
@@ -35,7 +35,7 @@ const Inicio = () => {
           <div className="md:w-1/2 w-full flex justify-center">
             <img
               src="HomeImg.png"
-              alt="NutriSmart Home"
+              alt="AlimentatePlus Home"
               className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl h-auto object-contain"
             />
           </div>
