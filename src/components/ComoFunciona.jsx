@@ -29,8 +29,7 @@ const ComoFunciona = () => {
               <div className="flex">
                   <div className="">
                       <img src="" alt="" />
-                  </div>
-  
+                  </div>  
               </div>
             </div>
           </div>
