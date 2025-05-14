@@ -26,8 +26,8 @@ const ComoFunciona = () => {
             <div className="flex">
               <div className="">
                 <img
-                  src="HowItWorksImg.png"
-                  alt={t("how_it_works.image_alt")}
+                  src=""
+                  alt=""
                 />
               </div>
             </div>
