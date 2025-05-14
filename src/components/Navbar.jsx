@@ -1,8 +1,12 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next"; // Importa el hook
+import LanguageSwitcher from "./LanguageSwitcher"; // Importa el componente
 
 const NavBar = () => {
+  const { t } = useTranslation(); // Inicializa el hook
   const nav_items = "hover:cursor-pointer hover:text-dark-green";
   const [menuOpen, setMenuOpen] = useState(false);
+
   function toogleMenu() {
     setMenuOpen(!menuOpen);
   }
@@ -22,31 +26,33 @@ const NavBar = () => {
 
         <div className="md:flex md:ml-auto md:mr-auto text-lg hidden items-center justify-center gap-10">
           <a className={nav_items} href="#Para-ti">
-            Para Ti
+            {t("navbar.for_you")}
           </a>
           <a className={nav_items} href="#testimonios">
-            Nuestros Usuarios
+            {t("navbar.testimonials")}
           </a>
           <a className={nav_items} href="#ComoFunciona">
-            Cómo funciona
+            {t("navbar.how_it_works")}
           </a>
           <a className={nav_items} href="#cta">
-            Únete
+            {t("navbar.join")}
           </a>
         </div>
 
-        <div className="md:flex hidden mr-10 gap-2 text-lg">
+        <div className="md:flex hidden mr-10 gap-4 items-center">
+          <LanguageSwitcher /> {/* Agrega el selector de idioma */}
           <a href="register">
             <button className="bg-[#cdffd6] rounded-2xl py-0 md:py-2 md:px-3 hover:cursor-pointer">
-              Registrarse
+              {t("navbar.register")}
             </button>
           </a>
           <a href="login">
-            <button className="bg-[#63b663]  rounded-2xl md:py-2 md:px-3 hover:cursor-pointer">
-              Iniciar Sesión
+            <button className="bg-[#63b663] rounded-2xl md:py-2 md:px-3 hover:cursor-pointer">
+              {t("navbar.login")}
             </button>
           </a>
         </div>
+
         <div className="flex items-center w-10 h-10 md:hidden mr-5">
           <button
             className="text-gray-700 focus:outline-none"
@@ -70,44 +76,49 @@ const NavBar = () => {
           </button>
         </div>
       </nav>
+
       {menuOpen && (
         <div className="md:hidden bg-white border-t mt-10 fixed w-full z-50">
           <a
             href="#Para-ti"
             className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
           >
-            Para Ti
+            {t("navbar.for_you")}
           </a>
           <a
             href="#testimonios"
             className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
           >
-            Nuestros Usuarios
+            {t("navbar.testimonials")}
           </a>
           <a
             href="#ComoFunciona"
             className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
           >
-            Cómo funciona
+            {t("navbar.how_it_works")}
           </a>
           <a
             href="#cta"
             className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
           >
-            Únete
+            {t("navbar.join")}
           </a>
           <a
-            href="#"
+            href="login"
             className="block px-4 py-2 text-[#245e4f] font-bold hover:bg-gray-100"
           >
-            Iniciar Sesion
+            {t("navbar.login")}
           </a>
           <a
-            href="#"
+            href="register"
             className="block px-4 py-2 text-[#245e4f] font-bold hover:bg-gray-100"
           >
-            Registrarse
+            {t("navbar.register")}
           </a>
+          <div className="block px-4 py-2">
+            <LanguageSwitcher />{" "}
+            {/* Agrega el selector de idioma en el menú móvil */}
+          </div>
         </div>
       )}
     </>
